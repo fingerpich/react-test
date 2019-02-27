@@ -1,0 +1,6 @@
+export const FETCH_USER_DATA = 'FETCH_USER_DATA';
+export const FETCH_MENU = 'FETCH_MENU';
+
+export const REQUEST_SIGN_IN = 'REQUEST_SIGN_IN';
+export const SUCCESS_SIGN_IN = 'SUCCESS_SIGN_IN';
+export const FAILED_SIGN_IN = 'FAILED_SIGN_IN';

@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
 import './App.css';
+import PrivateRoute from './hoc/PrivateRoute';
+import Posts from './containers/posts';
+import Login from './containers/login';
+import Header from './containers/header';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BrowserRouter>
+          <div>
+              <Header/>
+              <Posts/>
+              <main>
+                  <Switch>
+                      <Redirect exact path='/' to='/posts' />
+                      <Route exact path="/login" component={Login} />
+                      <PrivateRoute exact path='/posts' component={Posts} />
+                      <Redirect to={'/posts'}/>
+                  </Switch>
+              </main>
+          </div>
+      </BrowserRouter>
     );
   }
 }
