@@ -1,5 +1,5 @@
 # ReactTest
-The demo is placed in [fingerpich.github.io/angular-test](https://fingerpich.github.io/angular-test/)
+The demo is placed in [fingerpich.github.io/react-test](https://fingerpich.github.io/react-test/)
 
 [![CircleCI](https://circleci.com/gh/fingerpich/react-test.svg?style=svg)](https://circleci.com/gh/fingerpich/react-test)
 
