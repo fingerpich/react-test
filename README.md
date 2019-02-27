@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ReactTest
+The demo is placed in [fingerpich.github.io/angular-test](https://fingerpich.github.io/angular-test/)
+
+[![CircleCI](https://circleci.com/gh/fingerpich/react-test.svg?style=svg)](https://circleci.com/gh/fingerpich/react-test)
 
 ## Available Scripts
 

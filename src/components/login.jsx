@@ -39,7 +39,7 @@ const styles = theme => ({
     }
 });
 
-class loginForm extends Component {
+export class LoginForm extends Component {
     constructor(props) {
         super(props);
 
@@ -91,7 +91,7 @@ class loginForm extends Component {
                     <div>
                         <FormControl className={classes.formControl}>
                             <InputLabel htmlFor="component-simple">Name</InputLabel>
-                            <Input id="component-simple" value={this.state.user.email} onChange={this.handleChange}/>
+                            <Input className={'email'} id="component-simple" value={this.state.user.email} onChange={this.handleChange}/>
                         </FormControl>
                     </div>
                 </CardContent>
@@ -118,4 +118,4 @@ class loginForm extends Component {
     }
 };
 
-export default withStyles(styles)(loginForm);
+export default withStyles(styles)(LoginForm);
