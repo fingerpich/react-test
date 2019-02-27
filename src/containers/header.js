@@ -2,7 +2,7 @@ import {connect} from 'react-redux';
 
 import {getMenu} from '../selectors/header';
 import {getUserEmail} from '../selectors/auth';
-import {fetchMenu, fetchUserData} from '../actions/header';
+import {signoutUser} from '../actions/header';
 
 import headerComponent from '../components/header';
 
@@ -15,8 +15,7 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        fetchMenu: dispatch(fetchMenu()),
-        fetchUserData: dispatch(fetchUserData()),
+        signout: () => dispatch(signoutUser()),
     }
 };
 

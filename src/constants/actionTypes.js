@@ -1,4 +1,5 @@
 export const FETCH_USER_DATA = 'FETCH_USER_DATA';
+export const SIGNOUT_USER = 'SIGNOUT_USER';
 export const FETCH_MENU = 'FETCH_MENU';
 
 export const REQUEST_SIGN_IN = 'REQUEST_SIGN_IN';
