@@ -10,9 +10,10 @@ import posts from './reducers/posts';
 import albums from './reducers/albums';
 
 import loginEpic from './epics/login';
+import postEpic from './epics/posts';
 
 export const rootEpic = combineEpics(
-  loginEpic
+  loginEpic, postEpic
 );
 
 export const rootReducer = combineReducers({
